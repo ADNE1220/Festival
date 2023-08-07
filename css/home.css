@@ -1,0 +1,158 @@
+@charset "utf-8";
+body{background-color: #000;}
+
+.warning{
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 350px;
+    height: 220px;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 1px 1px 500px red;
+    padding: 25px;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+}
+.warning h1{
+    font-family: '조선체';
+    font-size: 3.5em;
+    color: red;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.637);
+}
+.warning p{
+    font-family: '아리랑혼체';
+    padding-top: 20px;
+    font-size: 2em;
+}
+.warning button{
+    text-align: center;
+    padding: 3px 50px;
+    margin: 30px auto 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: '궁서체';
+}
+.warning button:hover{
+    background-color: black;
+    color: red;
+}
+
+.warning_bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#home_wrap{
+    /* width: 1920px;
+    height: 1280px; */
+}
+.home_door{
+    width: 100%;
+    height: 100%;
+}
+.enter{
+    font-family: '신라문화체';
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 30px crimson;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    z-index: 100;
+    padding: 50px;
+    position: fixed;
+}
+
+.door_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main_logo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 95;
+    /* display: none; */
+}
+.main_logo>a{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 90;
+    cursor: unset;
+    position: fixed;
+}
+.main_logo>a>img{
+    width: 580px;
+    height: 670px;
+}
+.main_logo>img{
+    position: absolute;
+    top: -25%;
+    left: 49%;
+    transform: translateX(-50%);
+    z-index: 85;
+    position: fixed;
+}
+
+
+.door{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.door_L{
+    position: absolute;
+    left: 0;
+    z-index: 80;
+    position: fixed;
+}
+
+.door_R{
+    position: absolute;
+    right: 0;
+    z-index: 80;
+    position: fixed;
+}
+
+.red_lighting{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 75;
+    position: fixed;
+}
+.red_lighting img{}
+
+.halmoni{
+    position: absolute;
+    position: fixed;
+    bottom: -1%;
+    left: 37.5%;
+    transition: all 1s;
+    z-index: 70;
+}
+.halmoni img{
+    width: 80%;
+    height: 80%;
+}
+
+.door_bg{
+    position: fixed;
+}

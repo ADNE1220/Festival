@@ -1,0 +1,1126 @@
+@charset "utf-8";
+body{
+    background-color: #000;
+    box-shadow: inset 0 0 10em black;
+}
+#wrap{
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* height: 10000px; */
+}
+#top_null{
+    width: 100%;
+    height: 130px;
+    background-color: #555;
+    box-shadow: inset 0 0 3em #000;
+}
+.top_null{
+    width: 100%;
+    height: 130px;
+}
+h2{
+    font-family: '조선체';
+    letter-spacing: 3px;
+    font-size: 2em;
+    color: white;
+}
+h2 span{
+    color: rgb(225, 0, 0);
+}
+
+/* -----------------------------------헤더 */
+#header{
+    width: 100%;
+    height: 130px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+#header.scro{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    color: white;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+}
+.head_inner{
+    width: 80%;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100px;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+/* -------------------헤더 메뉴 */
+.head_nav{
+    width: 100%;
+    float: right;
+}
+.head_nav ul{
+    float: right;
+}
+.head_nav ul li{
+    float: left;
+    margin-right: 10px;
+}
+.head_nav ul li a{
+    display: inline-block;
+    font-size: 2em;
+    font-family: '조선체';
+    padding: 0 20px;
+    line-height: 125px;
+}
+.head_nav ul li a.on{
+    color: rgb(225, 0, 0);
+    background: url("../img/ink2.png")no-repeat center center ;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+    
+}
+
+/* -----------------------------------메인 슬라이드 */
+#main_visual{
+    width: 100%;
+    height: 750px;
+    background-color: #000;
+    overflow: hidden;
+}
+.main_slide{
+    margin-top: 50px;;
+    height: 750px;
+    overflow: hidden;
+}
+.main_move{
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+.main_move li{
+    position: absolute;
+    width: 100%;
+}
+.main_move li a img{}
+
+/* -----------------------------------유령구역 */
+#cont_ghost{
+    width: 100%;
+    padding-top: 100px;
+}
+.ghost_inner{
+    width: 100%;
+    min-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: inset 0 0 10em black;
+}
+.ghost_inner img{
+    width: 100%;
+}
+.ghost_account{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.ghost_account nav{
+    text-align: center;
+    font-family: '신라문화체';
+    font-size: 2.5em;
+    line-height: 1.3;
+    color: white;
+    padding: 100px;
+    line-height: 100px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px black;
+}
+.ghost_inner>p{
+    text-align: center;
+    font-family: '신라문화체';
+    font-size: 2.5em;
+    line-height: 1.3;
+    color: white;
+    padding: 50px 0 30px;
+    text-shadow: 0 0 20px rgb(200, 0, 0);
+}
+
+.ghost_mission{
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("/img/hand1.png") no-repeat center;
+    filter: drop-shadow(0 0 15px rgba(200, 0, 0, 0.7));
+    background-size: cover;
+}
+
+.ghost_mission ul{
+    width: 80%;
+    margin: 0 auto;
+}
+.ghost_mission ul li{
+    width: 250px;
+    height: 250px;
+    margin: 25px 20px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+    filter: blur(1px) brightness(0.90) grayscale(30%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ghost_mission ul li a{
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+.ghost_mission ul li a img{
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.ghost_mission ul li:nth-child(1):hover,
+.ghost_mission ul li:nth-child(2):hover,
+.ghost_mission ul li:nth-child(3):hover,
+.ghost_mission ul li:nth-child(4):hover{
+    transform: scale(1.1);
+    filter: blur(0px) invert(0.2) contrast(110%);
+}
+.ghost_mission ul li:nth-child(1) a{
+    background: url("../img/mission1.jpg")no-repeat center 100%;
+    background-size: cover;
+}
+.ghost_mission ul li:nth-child(2) a{
+    background: url("../img/mission2.jpg")no-repeat center 100%;
+    background-size: cover;
+}
+.ghost_mission ul li:nth-child(3) a{
+    background: url("../img/mission3.jpg")no-repeat center 100%;
+    background-size: cover;
+}
+.ghost_mission ul li:nth-child(4) a{
+    background: url("../img/mission4.jpg")no-repeat center 100%;
+    background-size: cover;
+}
+
+/* -----------------------------------콘텐츠 */
+#content{
+    width: 100%;
+}
+.cont_guide{}
+.title_inner{
+    width: 80%;
+    min-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.title_inner h2{
+    line-height: 25px;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+.cont_title{
+    width: 500px;
+    height: 125px;
+    background: url("../img/con_menu_bg.png")no-repeat center center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    filter: drop-shadow(0px 0px 10px rgba(200, 0, 0, 1));
+}
+
+/* -----------------------------------이용안내 */
+.cont_guide{
+    width: 100%;
+    position: relative;
+    background-image: url("../img/house2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.guide_inner{
+    width: 80%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+.guide_slide{
+    max-width: 1500px;
+    margin: 0 auto 30px;
+    padding-top: 25px;
+    display: flex;
+}
+.guide_slide li{
+    width: calc(1500px - 200px / 3);
+    margin: 0 auto;
+    text-align: center;
+}
+.guide_slide li img{
+    box-sizing: unset;
+    width: 75%;
+    padding: 10px;
+    border-top: 15px solid rgba(200, 0, 0, 0);
+    border-bottom: 15px solid rgba(200, 0, 0, 0);
+    border-left: 20px solid rgba(100, 0, 0, 0);
+    border-right: 20px solid rgba(100, 0, 0, 0);
+    cursor: pointer;
+    filter: grayscale(1) sepia(0.5);
+    transition: all 0.3s;
+}
+.guide_slide li img:hover{
+    transform: scale(1.1);
+    border-top: 15px solid rgba(200, 0, 0, 0.5);
+    border-bottom: 15px solid rgba(200, 0, 0, 0.5);
+    border-left: 20px solid rgba(100, 0, 0, 0.5);
+    border-right: 20px solid rgba(100, 0, 0, 0.5);
+    filter: unset;
+}
+
+.guide_map{
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.guide_map>a>img{
+    display: inline-block;
+    height: 500px;
+    cursor: zoom-in;
+    transition: all 0.3s;
+    z-index: 100;
+}
+.guide_map>a>img:hover{
+    transform: scale(1.25);
+}
+
+.guide_map ul{
+    float: left;
+    margin-top: 80px;
+}
+.guide_map ul li{
+    display: flex;
+    margin-top: 20px;
+    padding: 5px 25px;
+    column-gap: 15px;
+    position: relative;
+}
+.guide_map>ul>li::after{
+    content: "";
+    width: 550px;
+    border-bottom: 1px solid rgb(225, 0, 0);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+}
+.guide_map>ul>li:hover::after{
+    transform: scaleX(1);
+}
+.guide_map ul li a.scro{}
+.guide_map ul li h2{
+    text-align: center;
+    width: 180px;
+    background: url("../img/ink2.png")no-repeat left center ;
+    padding: 10px 20px;
+    border-radius: 35%;
+    filter: drop-shadow(0px 0px 10px rgba(200, 0, 0, 1));
+}
+.guide_map ul li:nth-child(3) h2{
+    background-position: 15px;
+}
+.guide_map ul li p{
+    font-family: '아리랑혼체';
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 1.3em white;
+}
+.guide_map ul li p:hover{
+    color: rgb(200, 0, 0);
+}
+.guide_map ul li p::before{
+    content: "· ";
+    font-weight: bold;
+    text-shadow: 0 0 2px black;
+    color: black;
+}
+.guide_map nav{
+    color: white; 
+    margin-left: 20px;
+    /* float: left; */
+}
+.guide_map nav p{
+    font-size: 16px !important;
+}
+
+/* -----------------------------------입장/예약 */
+#cont_charge{
+    width: 100%;
+    padding-top: 100px;
+    background-color: #000;
+    box-shadow: inset 0 0 10em black;
+}
+.charge_money{
+    width: 1500px;
+    min-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: url("../img/ink1.png") no-repeat center center;
+    background-size: contain;
+    filter: drop-shadow(0 0 30px rgba(200, 0, 0, 0));
+}
+.charge_money>.title_inner{
+    padding: 30px 0 25px;
+}
+.charge_money table{
+    width: 800px;
+    margin: 0 auto 20px;
+}
+.charge_table{
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 25px;
+}
+.charge_table tr{
+    width: 100%;
+    padding: 20px 25px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #333;
+}
+.charge_table tr th{
+    background-color: black;
+    box-shadow: inset 0 0 30px rgba(200, 0, 0, 0.5);
+    padding: 25px 25px 25px 35px;
+    font-family: '신라문화체';
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    color: white;
+}
+.charge_table tr th span{
+    color: rgb(200, 0, 0);
+}
+.charge_table tr td{
+    background-color: #777;
+    text-align: left;
+    font-family: '아리랑혼체';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px 20px 20px 35px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid #333;
+}
+.charge_table tr td:first-child{
+    font-family: '조선체';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.charge_table tr:last-child td{
+    font-size: 13px;
+    font-family: '바탕체';
+    font-weight: 500;
+    color: rgb(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.charge_table tr:last-child{
+    background-color: #222;
+}
+
+/* -------------------유의사항 */
+.charge_money nav{
+    width: 800px;
+    margin: 0 auto;
+    text-decoration: wavy;
+}
+.charge_money>nav>span{
+
+}
+.charge_money>nav>p{
+    line-height: 1.5;
+    font-family: '아리랑혼체';
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    color: white;
+}
+.charge_money>nav>p::before,
+.charge_money>nav>p::after{
+    content: "※";
+    color: rgb(200, 0, 0);
+}
+
+/* -------------------티켓 */
+.charge_ticket{
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.charge_ticket>.title_inner>h2{
+    margin-top: 30px;
+    padding: 25px;
+}
+.charge_ticket a{
+    display: inline-block;
+}
+.ticket{
+    position: relative;
+    margin-top: 20px;
+}
+.ticket img:nth-child(1){
+    position: absolute;
+    left: 313px;
+    z-index: 5;
+}
+.ticket img:nth-child(2){
+    position: absolute;
+    right: 308px;
+    z-index: 10;
+    transform-origin: bottom left;
+    animation: swing 2.5s infinite alternate ease-in-out;
+}
+@keyframes swing{
+    50%{transform: rotate(10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.ticket_btn{
+    margin: 50px 0 100px;
+    width: 200px;
+    height: 80px;
+    color: #fff;
+    font-family: "아리랑혼체";
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0 0 3px #222;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background: linear-gradient(0deg, rgb(180, 100, 50) 0%, rgb(200, 150, 50) 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+.ticket_btn:hover{
+    color: rgb(200, 0, 0);
+    background: transparent;
+    box-shadow:none;
+}
+.ticket_btn::before,
+.ticket_btn::after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:3px;
+    width:0;
+    background: rgb(200, 0, 0);
+    box-shadow:
+    -1px -1px 5px 0px rgb(200, 0, 0),
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+.ticket_btn::after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.ticket_btn:hover::before,
+.ticket_btn:hover::after{
+    width:100%;
+    transition:800ms ease all
+}
+
+/* -----------------------------------생존구역 */
+#cont_save{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    box-shadow: inset 0 0 10em black;
+    background: url("../img/show_bg.jpg")no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.save_inner{
+    width: 80%;
+    min-width: 1500px;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.save_show1{
+    float: left;
+    max-width: 1500px;
+}
+.save_show1>h2{
+    text-align: center;
+    font-family: '아리랑혼체';
+    margin-top: 30px;
+    padding: 15px;
+    background: url("../img/con_menu_bg.png") center center;
+    background-size: cover;
+    filter: drop-shadow(0px 0px 10px rgba(200, 0, 0, 1));
+}
+.show_noon_wrap{
+    box-shadow: 0 0 15px black;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+.noon_imgs{
+    width: 700px;
+    position: relative;
+}
+.noon_imgs li{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.noon_imgs li a{}
+.noon_imgs li a img{
+    width: 700px;
+    cursor: default;
+}
+.noon_imgs .slick-arrow{
+    width: 55px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    text-indent: -9999px;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: drop-shadow(0 0 3px white);
+    cursor: pointer;
+}
+.noon_imgs .slick-arrow.slick-next{
+    right: -5%;
+    background-position: right;
+    z-index: 10;
+}
+.noon_imgs .slick-arrow.slick-next:hover{
+    animation: arrowR_move 1s infinite alternate ease-in-out;
+}
+@keyframes arrowR_move{
+    0%{right: -5%;}
+    100%{right: -8%;}
+}
+.noon_text_inner{
+    float: right;
+    margin-top: 50px;
+    width: 700px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+}
+
+.save_show2{
+    padding-top: 20px;
+    clear: both;
+    float: right;
+}
+.save_show2>h2{
+    text-align: center;
+    font-family: '아리랑혼체';
+    margin-top: 30px;
+    padding: 15px;
+    background: url("../img/con_menu_bg.png") center center;
+    background-size: cover;
+    filter: drop-shadow(0px 0px 10px rgba(200, 0, 0, 1));
+}
+.show_night_wrap{
+    box-shadow: 0 0 15px black;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+.night_imgs{
+    width: 700px;
+    position: relative;
+}
+.night_imgs li{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.night_imgs li a{}
+.night_imgs li a img{
+    width: 700px;
+    cursor: default;
+}
+.night_imgs .slick-arrow{
+    width: 55px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: drop-shadow(0 0 3px white);
+}
+.night_imgs .slick-arrow.slick-prev{
+    cursor: pointer;
+    background-image: url("../img/arrow.png");
+    left: -5%;
+    z-index: 5;
+    padding: 15px;
+}
+.night_imgs .slick-arrow.slick-prev:hover{
+    animation: arrowL_move 1s infinite alternate ease-in-out;
+}
+@keyframes arrowL_move{
+    0%{left: -5%;}
+    100%{left: -8%;}
+}
+.night_text_inner{
+    float: left;
+    width: 700px;
+    overflow: hidden;
+    margin-top: 100px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.show_time{
+    width: 500px;
+    margin: 10px auto 0;
+    color: white;
+    text-align: center;
+    box-shadow: 20px 60px 0 rgba(20, 20, 20, 0.5);
+}
+.show_time tr{
+    line-height: 60px;
+}
+.show_time tr:first-child th:first-child{
+    background: url("../img/con_menu_bg.png")no-repeat left;
+    box-shadow:unset;
+}
+.show_time tr:first-child th{
+    font-size: 16px;
+    font-family: "아리랑혼체";
+    font-weight: 400;
+    background-color: #000;
+}
+.show_time th{
+    font-size: 23px;
+    font-family: '신라문화체';
+    letter-spacing: 3px;
+    background-color: rgba(68, 68, 68, 0.8);
+    border-bottom: 1px solid gray;
+    width: 200px;
+}
+.show_time td{
+    font-size: 20px;
+    font-family: '조선체';
+    border-bottom: 1px solid white;
+    border-left: 2px dotted gray;
+    width: 300px;
+}
+.show_time tr:nth-child(even) th{
+    background-color: rgba(28, 28, 28, 0.8);
+}
+.show_time tr:nth-child(odd) th{
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+.show_time tr:nth-child(even) td{
+    background-color: #66666674;
+    box-shadow: inset 5px 0px 15px rgba(0, 0, 0, 0.8);
+}
+.show_time tr:nth-child(odd) td{
+    background-color: #9999996f;
+}
+.show_movie{
+    float: left;
+}
+.show_movie{
+    clear: both;
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0;
+}
+.show_movie iframe{
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+
+/* -----------------------------------먹거리 */
+#cont_foodroad{
+    width: 100%;
+    padding-top: 130px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#cont_foodroad nav{
+    width: 100%;
+    position: relative;
+}
+.food_bulb{}
+.food_bulb img{
+    width: 1500px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    /* top: 30%; */
+    transform: translateX(-50%);
+    filter: drop-shadow(0px 5px 10px yellow);
+    z-index: 30;
+}
+.foodroad_inner{
+    width: 100%;
+    height: 1000px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url("../img/food0.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 50em black;
+}
+.food_text{
+    color: white;
+    padding-top: 130px;
+    text-align: center;
+    line-height: 1.3;
+    font-family: '아리랑혼체';
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px black;
+    animation: b_move 1s infinite alternate ease-in-out;
+}
+@keyframes b_move{
+    0%{transform: rotate(3deg);}
+    100%{transform: rotate(-3deg);}
+}
+.food_container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    background: url("../img/filem.png") repeat-x;
+    filter: drop-shadow(0px 0px 10px  rgba(200, 0, 0, 0.5));
+    position: relative;
+    top: 3%;
+    box-shadow: inset 0 0 10px black;
+}
+.food_con_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide_loop 15s linear infinite;
+}
+.food_container:hover>.food_con_wrap{
+    animation-play-state: paused;
+}
+.food_slide_img{
+    cursor: pointer;
+    transition: 0.3s ease;
+    filter: brightness(0.65);
+}
+.food_slide_img:hover{
+    transform: scale(1.1);
+    filter: unset;
+}
+.food_slide_img img{
+    width: 250px;
+    margin-left: 25px;
+    border-radius: 15px;
+}
+@keyframes slide_loop{
+    100% {transform: translateX(-100%);}
+}
+
+.foodroad_inner>nav{
+    margin-top: 70px;
+}
+.foodroad_inner>nav>p{
+    line-height: 1.5;
+    text-align: center;
+    font-family: '아리랑혼체';
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    color: white;
+}
+.foodroad_inner>nav>p::before,
+.foodroad_inner>nav>p::after{
+    content: "※";
+    color: rgb(200, 0, 0);
+}
+
+
+/* -----------------------------------MD상품 */
+.cont_MD{
+    width: 100%;
+    padding-top: 130px;
+    overflow: hidden;
+}
+.MD_inner{
+    width: 80%;
+    min-width: 1200px;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 50px;
+    box-shadow: inset 0 0 30px #555;
+    border-radius: 10px;
+}
+.MD_item{
+    scroll-snap-align: center;
+    display: inline-block;
+    margin: 50px 25px;
+    width: 300px;
+    white-space: normal;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.MD_item a img:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+.MD_item a{
+    display: block;
+}
+.MD_item a img{
+    width: 100%;
+}
+.MD_item a p{
+    font-family: '신라문화체';
+    margin-top: 3px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: white;
+    padding: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #555;
+    box-shadow: inset 0 5px 1em #333;
+}
+/* -----------------------------------공지사항 */
+#notice{
+    width: 100%;
+    padding-top: 130px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+#notice::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url("../img/red_lighting.png")no-repeat center bottom;
+    transform: rotate(180deg);
+    }
+.notice_inner{
+    width: 100%;
+    min-width: 1200px;
+    margin: 10px auto;
+}
+.notice_inner ul{}
+.notice_inner ul li{
+    margin: 5px 0;
+    padding: 5px;
+    line-height: 18px;
+    text-align: center;
+    font-family: '아리랑혼체';
+    font-weight: normal;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    color: white;
+    transition: all 0.5s;
+}
+.notice_inner ul li:hover{
+    border: 1px solid rgb(200, 0, 0);
+}
+.notice_list{
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+.notice_list p{
+    margin: 15px 0;
+    padding: 5px;
+    line-height: 20px;
+    font-family: '아리랑혼체';
+    font-weight: normal;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+.notice_list p span{
+    position: relative;
+}
+.notice_list p span::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background: rgba(255, 0, 0, 0.4);
+}
+.notice_list p:hover span::after{
+    width: 100%;
+    transition: all 0.3s;
+    border: 1px solid rgba(200, 0, 0, 0.5);
+}
+
+/* -----------------------------------푸터 */
+#footer{
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #555;
+    background-color: #555;
+    box-shadow: inset 0 0 10em #000;
+}
+.foot_inner{
+    width: 80%;
+    min-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.foot_inner nav{
+    line-height: 35px;
+    font-family: '조선체';
+}
+.foot_logo{
+    width: 200px;
+}
+.foot_logo img{
+    width: 50%;
+}
+
+.sns_icons{
+    display: flex;
+    align-items: center;
+}
+.sns_icons li:hover a{
+    color: rgb(200, 0, 0);
+    transition: all 0.3s;
+}
+.sns_icons li{
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+}
+.sns_icons li a{
+    font-family: '아리랑혼체';
+    color: white;
+}
+.info{
+    text-align: left;
+}
+.info p{}
+.info span::before{
+    content: "| ";
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(200, 0, 0, 1);
+}
+.info span:first-child::before{
+    display: none;
+}
+.info span{
+    margin: 0 5px;
+}
+.tel span{
+    color: rgba(200, 0, 0, 1);
+    font-size: 18px;
+    font-weight: bold;
+}
+#footer>nav{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #777;
+    font-family: '신라문화체';
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+/* -----------------------------------상단퀵버튼 */
+.quick_fix{
+    width: 100%;
+}
+.quick_fix a{
+    display: inline-block;
+    bottom: 3%;
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+    animation: quick 1.5s infinite alternate ease-in-out;
+}
+@keyframes quick{
+    0%{bottom: 2%;}
+    100%{bottom: 5%;}
+}
+
+/* -----------------------------------팝업 포스터 */
+.popup{
+    width: 465px; 
+    box-sizing: unset;
+    border: 10px solid #555;
+    background-color: #555;
+    box-shadow: 0 5px 1em black;
+    overflow: hidden;
+    float: left;
+    position: fixed;
+    top: 130px;
+    left: 3%;
+    z-index: 999;
+}
+.popup img{
+}
+.popup button{
+    float: right;
+    margin: 5px auto 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.close{
+    display: block;
+    font-family: '신라문화체';
+    font-size: 1.5em;
+    padding: 5px 20px;
+}
+
+/* end! */
